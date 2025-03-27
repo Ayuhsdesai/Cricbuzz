@@ -1,6 +1,7 @@
 package com.example.cricbuzzz
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,7 +67,12 @@ class RecentFragment : Fragment() {
 
     private fun filterMatches(category: String) {
         val filteredTypeMatch = matchList.find { it.matchType.equals(category, ignoreCase = true) }
-        val filteredSeriesMatches = filteredTypeMatch?.seriesMatches ?: emptyList()
+        val filteredSeriesMatches = filteredTypeMatch?.seriesMatches ?: arrayListOf()
+//        filteredSeriesMatches.forEach {
+//            Log.d("==-==", "filterMatches: ${it.seriesAdWrapper?.seriesName}")
+//        }
+
+        filteredSeriesMatches.removeAll { it.seriesAdWrapper?.seriesName == null }
 
         seriesAdapter = InfoAdapter(requireContext(), filteredSeriesMatches)
         recyclerView.adapter = seriesAdapter

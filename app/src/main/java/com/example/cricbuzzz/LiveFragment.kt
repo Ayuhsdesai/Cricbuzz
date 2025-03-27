@@ -1,6 +1,7 @@
 package com.example.cricbuzzz
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cricbuzzz.RetroFitAPI.RetroFirInstance
 import com.example.example.CricBuzzMain
+import com.example.example.SeriesMatches
 import com.example.example.TypeMatches
 import com.google.android.material.tabs.TabLayout
 import retrofit2.Call
@@ -30,7 +32,7 @@ class LiveFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerView)
         tabLayout = view.findViewById(R.id.tabLayout)
-        noMatchText = view.findViewById(R.id.noMatchText) // Ensure this TextView is in your XML
+        noMatchText = view.findViewById(R.id.noMatchText)
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
@@ -70,7 +72,9 @@ class LiveFragment : Fragment() {
 
     private fun filterMatches(category: String) {
         val filteredTypeMatch = matchList.find { it.matchType.equals(category, ignoreCase = true) }
-        val filteredSeriesMatches = filteredTypeMatch?.seriesMatches ?: emptyList()
+        val filteredSeriesMatches : ArrayList<SeriesMatches> = filteredTypeMatch?.seriesMatches ?: arrayListOf()
+
+        filteredSeriesMatches.removeAll { it.seriesAdWrapper?.seriesName == null }
 
         if (filteredSeriesMatches.isEmpty()) {
             noMatchText.visibility = View.VISIBLE

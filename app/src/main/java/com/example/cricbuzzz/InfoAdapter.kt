@@ -2,6 +2,7 @@ package com.example.cricbuzzz
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,18 +32,20 @@ class InfoAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-
         val seriesMatch = seriesMatches[position]
+
+//        if (seriesMatch.seriesAdWrapper?.seriesName == null) {
+//            holder.itemView.visibility = View.GONE
+//            return
+//        }
+//        holder.itemView.visibility = View.VISIBLE
+//        Log.d("==-==", "onBindViewHolder: ${seriesMatch.seriesAdWrapper?.seriesName}")
 
         val matchList = seriesMatch.seriesAdWrapper?.matches
         if (matchList.isNullOrEmpty()) {
-
             return
         }
         val match = matchList[0]
-        if (seriesMatches.get(position).seriesAdWrapper!!.seriesName == null) {
-            holder.series.visibility = View.GONE
-        }
 
         holder.series.text = seriesMatch.seriesAdWrapper!!.seriesName
         holder.match.text = match.matchInfo?.matchDesc
