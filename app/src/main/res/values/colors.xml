@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="highlightColor">#4CAF50</color>
+    <color name="teamColor">#1E88E5</color>
+    <color name="statusColor">#D32F2F</color>
+    <color name="scoreColor">#FF5722</color>
+    <color name="green_dark">#087E0D</color>
+    <color name="card_background">#E0F2F1</color>
+    <color name="light_gray">#F5F5F5</color> <!-- Light background for section headers -->
+    <color name="divider">#BDBDBD</color> <!-- Light gray divider -->
+    <color name="text_primary">#212121</color> <!-- Dark text -->
+    <color name="text_secondary">#757575</color> <!-- Light text -->
+    <color name="primary">#4CAF50</color> <!-- Green for Match Status -->
+    <color name="secondary">#FF9800</color> <!-- Orange for Section Headers -->
+    <color name="background">#F5F5F5</color> <!-- Light Gray for App Background -->
+    <color name="match_status_bg">#E0E0E0</color> <!-- Gray Background for Match Status -->
+    <color name="title_bg">#D32F2F</color> <!-- Red for Title Row -->
+    <color name="title_text">#FFFFFF</color> <!-- White for Title Text -->
+    <color name="accent">#2196F3</color> <!-- Blue for Scores -->
+</resources>
