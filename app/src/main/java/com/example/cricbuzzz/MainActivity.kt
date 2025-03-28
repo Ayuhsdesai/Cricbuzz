@@ -2,6 +2,7 @@ package com.example.cricbuzzz
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cricbuzzz.adapter.ViewPagerAdapter
 import com.example.cricbuzzz.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

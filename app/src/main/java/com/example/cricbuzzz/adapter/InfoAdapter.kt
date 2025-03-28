@@ -1,13 +1,14 @@
-package com.example.cricbuzzz
+package com.example.cricbuzzz.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cricbuzzz.Match_Score
+import com.example.cricbuzzz.R
 import com.example.example.SeriesMatches
 
 class InfoAdapter(

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cricbuzzz.RetroFitAPI.RetroFirInstance
+import com.example.cricbuzzz.adapter.BatsmanAdapter
 import com.example.cricbuzzz.databinding.ActivityScoreDataBinding
 import com.example.example.Batsman
 import com.example.example.Bowler
@@ -45,7 +46,7 @@ class ScoreData : AppCompatActivity() {
         binding.teamBBatsmanRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.teamABowlerRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Initialize Adapters
+
         battingAdapter1 = BatsmanAdapter(battingList1, this)
         bowlingAdapter1 = BowlerAdapter(bowlingList1, this)
         battingAdapter2 = BatsmanAdapter(battingList2, this)

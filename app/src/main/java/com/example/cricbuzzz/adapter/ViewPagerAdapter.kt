@@ -1,7 +1,10 @@
-package com.example.cricbuzzz
+package com.example.cricbuzzz.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.cricbuzzz.LiveFragment
+import com.example.cricbuzzz.MainActivity
+import com.example.cricbuzzz.RecentFragment
 
 class ViewPagerAdapter(activity: MainActivity) : FragmentStateAdapter(activity) {
 

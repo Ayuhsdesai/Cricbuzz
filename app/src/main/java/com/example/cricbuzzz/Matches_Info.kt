@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cricbuzzz.adapter.InfoAdapter
 import com.example.cricbuzzz.databinding.ActivityMatchesInfoBinding
 import com.example.example.SeriesMatches
 import com.example.example.TypeMatches

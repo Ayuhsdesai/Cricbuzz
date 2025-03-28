@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LiveFragment">
+    tools:context=".RecentFragment">
 
     <!-- TabLayout for Different Match Types -->
     <com.google.android.material.tabs.TabLayout

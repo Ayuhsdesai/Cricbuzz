@@ -1,3 +1,5 @@
+package com.example.cricbuzzz.adapter
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View

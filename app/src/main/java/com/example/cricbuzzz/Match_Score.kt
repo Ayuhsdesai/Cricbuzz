@@ -1,9 +1,9 @@
 package com.example.cricbuzzz
 
-import ScoreAdapter
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cricbuzzz.adapter.ScoreAdapter
 import com.example.cricbuzzz.databinding.ActivityMatchScoreBinding
 import com.example.example.SeriesMatches
 

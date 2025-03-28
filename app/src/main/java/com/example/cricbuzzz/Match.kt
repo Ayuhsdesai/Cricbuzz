@@ -1,6 +1,6 @@
 package com.example.cricbuzzz
 
-data class  Match(
+data class Match(
     val matchType: String,
     val seriesname: String,
     val status: String,

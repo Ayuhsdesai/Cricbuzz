@@ -1,14 +1,13 @@
 package com.example.cricbuzzz
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cricbuzzz.RetroFitAPI.RetroFirInstance
-import com.example.cricbuzzz.databinding.FragmentLiveBinding
+import com.example.cricbuzzz.adapter.InfoAdapter
 import com.example.example.CricBuzzMain
 import com.example.example.TypeMatches
 import com.google.android.material.tabs.TabLayout
@@ -27,7 +26,7 @@ class RecentFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_live, container, false)
+        val view = inflater.inflate(R.layout.fragment_recent, container, false)
 
         recyclerView = view.findViewById(R.id.recyclerView)
         tabLayout = view.findViewById(R.id.tabLayout)
