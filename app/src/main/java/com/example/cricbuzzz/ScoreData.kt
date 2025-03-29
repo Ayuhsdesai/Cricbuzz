@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cricbuzzz.RetroFitAPI.RetroFirInstance
 import com.example.cricbuzzz.adapter.BatsmanAdapter
+import com.example.cricbuzzz.adapter.BowlerAdapter
 import com.example.cricbuzzz.databinding.ActivityScoreDataBinding
 import com.example.example.Batsman
 import com.example.example.Bowler

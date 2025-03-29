@@ -1,10 +1,12 @@
-package com.example.cricbuzzz
+package com.example.cricbuzzz.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cricbuzzz.R
+import com.example.cricbuzzz.ScoreData
 import com.example.example.Bowler
 
 class BowlerAdapter(private val bowlerList: List<Bowler>, private val scoredata: ScoreData) :
